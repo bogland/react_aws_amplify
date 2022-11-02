@@ -35,3 +35,12 @@ yarn start
 ## 처음 시작할때 amplify 설정이 될수 있도록
 > import awsconfig from './aws-exports';
 > Amplify.configure(awsconfig);
+
+## React Amplify Auth 함수 사용법
+https://www.youtube.com/watch?v=9BSpY-fEbdM  
+
+## SMS 한도 증가
+https://blog.naver.com/PostView.naver?blogId=chandong83&logNo=222146746303&redirect=Dlog&widgetTypeCall=true&directAccess=false
+
+## SMS 샌드박스 벗어나기
+https://any-ting.tistory.com/96  
