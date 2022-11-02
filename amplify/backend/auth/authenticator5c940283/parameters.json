@@ -1,0 +1,18 @@
+{
+  "authSelections": "identityPoolAndUserPool",
+  "resourceName": "authenticator5c940283",
+  "serviceType": "imported",
+  "region": "ap-northeast-2",
+  "requiredAttributes": [
+    "phone_number"
+  ],
+  "passwordPolicyMinLength": 6,
+  "passwordPolicyCharacters": [],
+  "mfaConfiguration": "ON",
+  "autoVerifiedAttributes": [
+    "phone_number"
+  ],
+  "mfaTypes": [
+    "SMS Text Message"
+  ]
+}
