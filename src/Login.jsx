@@ -9,7 +9,7 @@ import {
 	useAuthenticator
 } from '@aws-amplify/ui-react';
 import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
-import awsconfig from './aws-exports';
+
 import '@aws-amplify/ui-react/styles.css';
 
 const Login = ()=>{

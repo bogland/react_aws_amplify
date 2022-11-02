@@ -8,6 +8,9 @@
 ## amplify 설치
 > yarn add @aws-amplify/ui-react aws-amplify
 
+## 설정 파일 생성
+/src/aws-exports.js
+
 ## 설정 방법
 amplify 설정 페이지에 적혀있는 명령어 amplify pull 
 > amplify pull xxx xxxx
@@ -28,3 +31,7 @@ amplify 설정 페이지에 적혀있는 명령어 amplify pull
 
 ## 실행
 yarn start 
+
+## 처음 시작할때 amplify 설정이 될수 있도록
+> import awsconfig from './aws-exports';
+> Amplify.configure(awsconfig);
