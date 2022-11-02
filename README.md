@@ -1,75 +1,30 @@
-# Authentication using an Amplify React Authenticator Component
+## amplify cli 설치
+> npm install -g @aws-amplify/cli
 
-[Amplify UI Components](https://docs.amplify.aws/ui/q/framework/react) is an open-source toolkit that makes it easier for developers to add common use cases to their applications. The toolkit comes out of the box with a UI interface that is connected to Amplify’s backend services.
+## yarn 설치
+> npm install -g yarn
+- yarn 으로 설치해야 이상한 에러가 안떴다.
 
-## What Are We Building?
+## amplify 설치
+> yarn add @aws-amplify/ui-react aws-amplify
 
-In this example, we will use the [Authenticator UI Component](https://docs.amplify.aws/ui/auth/authenticator/q/framework/react) to allow users to signup and signin.
+## 설정 방법
+amplify 설정 페이지에 적혀있는 명령어 amplify pull 
+> amplify pull xxx xxxx
 
-We have bootstrapped this application using [Create React App](https://github.com/facebook/create-react-app) and will focus on the logic that adds authentication.
+## User Pool 세팅
+- 회색으로 변경 불가는 다시 만들어야함
 
-<img src="https://amplify-demo-assets.s3.amazonaws.com/screenshot.png" alt="screenshot" height="400px"/>
+![](https://drive.google.com/uc?export=view&id=1BzVpxEN8wxHIb7eJGZjd4SWqlrgCUtB-) 
+![](https://drive.google.com/uc?export=view&id=1FCMVI3fds9WbxJMfxC66vhbXKq5sAqnU) 
+![](https://drive.google.com/uc?export=view&id=1O7W3cBsmqpQwFv4RurbLILtsM9qgic8j) 
+![](https://drive.google.com/uc?export=view&id=1RuVBZKOD3lvb-1dLZQ3B1JzXateVIYt7) 
+![](https://drive.google.com/uc?export=view&id=1hhavs6lMdJUF4zbi341gwKJ5X7TV7a5e) 
+![](https://drive.google.com/uc?export=view&id=1j1pQ0R7qrmLpPvS3tLu6l0MKuMD6RnsV) 
 
-## Let's Get Started!
+## User pool 받아오기
+> amplify import Auth
+> amplify push
 
-## Setup
-
-1. Login or [Create](https://portal.aws.amazon.com/billing/signup?type=enterprise#/start) an AWS Account.
-2. In a terminal, clone this repo.
-3. Install the [Amplify CLI](https://github.com/aws-amplify/amplify-cli) `npm install -g @aws-amplify/cli`. Ensure you are in the directory you just cloned.
-4. If it’s your first time using the CLI, you will need to configure it by running `amplify configure`. Follow the instructions to create an IAM profile locally.
-5. Now let’s initialize an Amplify project in this directory. `amplify init`
-
-```
-$ amplify init
-? Enter a name for the environment  dev
-? Choose your default editor: (pick an editor)
-? Do you want to use an AWS profile? Y (this should be the profile you created in step #4)
-```
-
-6. Lastly, the CLI will provision our backend resources using the config files in the `amplify` directory. To provision these resources in the cloud, run `amplify push`. Confirm you want to use the Auth category.
-
-## Running the App
-
-1. `npm install`
-2. `npm run start`
-3. The app should run on http://localhost:3000/. Try creating an account and signing in.
-
-## A Closer Look
-
-Now that you've built the app, let's take a look under the hood and explore how it works.
-
-### Frontend
-
-Let's dive into the frontend components. In this app, the important logic is in `App.js`.
-
-Using `AuthState` we can check if a user is authenticated and signed in: `AuthState.SignedIn`. If this is true, we can route to a user dashboard component or simply display their name.
-
-```
-<div>Hello, {user.username}</div>
-<img src={logo} className="App-logo" alt="logo" />
-<AmplifySignOut />
-```
-
-Notice, we also provide a way for users to signout, is the [signout component](https://docs.amplify.aws/ui/auth/authenticator/q/framework/react#sign-out).
-
-If a user isn’t signed in, let’s display the `AmplifyAuthenticator`:
-
-```
-<AmplifyContainer>
-  <AmplifyAuthenticator />
-</AmplifyContainer>
-```
-
-This works out of the box and displays a standard SignIn/SignOut interface for users.
-
-### Backend
-
-The Amplify CLI is responsible for building the necessary modules in the backend to support user authentication, which in this case lives in the AWS cloud. To be more specific, we will use Amazon Cognito, so there is no need to build your own backend.
-
-The config files in the `amplify` folder contain these instructions. If you start from scratch, run `amplify add auth` to build these files. Then run, `amplify push` to deploy them on AWS.
-
-## Next Steps
-
-- Read our [Authentication documentation](https://docs.amplify.aws/ui/auth/authenticator/q/framework/react) to further customize your app. There are many advanced use cases to build upon.
-- Join our communities on [Twitter](https://twitter.com/awsamplify) and [Discord](https://discord.gg/amplify)
+## 실행
+yarn start 
