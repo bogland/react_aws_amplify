@@ -6,6 +6,7 @@ import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react";
 import { AuthState, onAuthUIStateChange } from "@aws-amplify/ui-components";
 
 import "@aws-amplify/ui-react/styles.css";
+import AWS from "aws-sdk";
 
 const Login = () => {
   const [authState, setAuthState] = React.useState();
@@ -13,7 +14,27 @@ const Login = () => {
   const { user, signOut, route } = useAuthenticator((context) => [
     context.user,
   ]);
-  React.useEffect(() => {}, []);
+  React.useEffect(() => {
+    AWS.config.update({ region: "ap-northeast-1" }); //도쿄 리전을 사용함
+
+    // Create publish parameters
+    const params = {
+      Message: "안녕하세요. 개발이 취미인 사람입니다 :)",
+      PhoneNumber: "+8201051214857",
+    };
+
+    const publishTextPromise = new AWS.SNS({ apiVersion: "2010-03-31" })
+      .publish(params)
+      .promise();
+
+    publishTextPromise
+      .then(function (data) {
+        console.log("MessageID is " + data.MessageId);
+      })
+      .catch(function (err) {
+        console.error(err, err.stack);
+      });
+  }, []);
   console.log(route);
   console.log(user);
   return (

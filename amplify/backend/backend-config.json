@@ -1,6 +1,6 @@
 {
   "auth": {
-    "authenticator5c940283": {
+    "reactawsamplifyb4d75603": {
       "service": "Cognito",
       "serviceType": "imported",
       "providerPlugin": "awscloudformation",
