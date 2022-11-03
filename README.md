@@ -24,6 +24,8 @@ amplify 설정 페이지에 적혀있는 명령어 amplify pull
 ![](https://drive.google.com/uc?export=view&id=1j1pQ0R7qrmLpPvS3tLu6l0MKuMD6RnsV)   
 ![](https://drive.google.com/uc?export=view&id=1hhavs6lMdJUF4zbi341gwKJ5X7TV7a5e)   
 ![](https://drive.google.com/uc?export=view&id=1O7W3cBsmqpQwFv4RurbLILtsM9qgic8j)   
+![](https://drive.google.com/uc?export=view&id=11WfsFNqUqmDSM-_TYQGNod4E7AuCG8gh)   
+![](https://drive.google.com/uc?export=view&id=16pt16VOgvrD7ZRXA1-kvhzD_Q-BO_9q_)   
 
 
 ## User pool 받아오기
