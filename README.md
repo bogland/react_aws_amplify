@@ -18,8 +18,8 @@ amplify 설정 페이지에 적혀있는 명령어 amplify pull
 ## User Pool 세팅
 - 회색으로 변경 불가는 다시 만들어야함
 
-![](https://drive.google.com/uc?export=view&id=1BzVpxEN8wxHIb7eJGZjd4SWqlrgCUtB-) 
 ![](https://drive.google.com/uc?export=view&id=1FCMVI3fds9WbxJMfxC66vhbXKq5sAqnU) 
+![](https://drive.google.com/uc?export=view&id=1BzVpxEN8wxHIb7eJGZjd4SWqlrgCUtB-) 
 ![](https://drive.google.com/uc?export=view&id=1O7W3cBsmqpQwFv4RurbLILtsM9qgic8j) 
 ![](https://drive.google.com/uc?export=view&id=1RuVBZKOD3lvb-1dLZQ3B1JzXateVIYt7) 
 ![](https://drive.google.com/uc?export=view&id=1hhavs6lMdJUF4zbi341gwKJ5X7TV7a5e) 
